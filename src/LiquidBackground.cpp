@@ -6,19 +6,24 @@
 LiquidBackground::LiquidBackground(QWidget *parent)
     : QWidget(parent), m_elapsed(0)
 {
+    // Initialize animated blobs with position, velocity, and color / 위치, 속도, 색상으로 애니메이션 블록(Blob) 초기화
     m_blobs << Blob{{0.2, 0.2}, {0.01, 0.015}, 0, QColor(255, 255, 255, 100)};
     m_blobs << Blob{{0.8, 0.8}, {-0.012, -0.008}, 1.5, QColor(144, 202, 249, 80)};
     m_blobs << Blob{{0.6, 0.1}, {0.005, 0.01}, 3.0, QColor(255, 255, 255, 60)};
     m_blobs << Blob{{0.3, 0.9}, {0.008, -0.012}, 4.5, QColor(129, 212, 250, 70)};
 
+    // Start a 60FPS timer for smooth animation / 부드러운 애니메이션을 위한 60FPS 타이머 시작
     m_timer = new QTimer(this);
     connect(m_timer, &QTimer::timeout, [this]() {
-        m_elapsed += 0.016; // ~60fps
+        m_elapsed += 0.016; // Approximately 60fps
         update();
     });
     m_timer->start(16);
 }
 
+/**
+ * @brief Custom painting for the liquid effect / 리퀴드 효과를 위한 커스텀 페인팅
+ */
 void LiquidBackground::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);

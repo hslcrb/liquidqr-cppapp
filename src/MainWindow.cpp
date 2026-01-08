@@ -9,14 +9,19 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), m_lang("ko")
 {
+    // Apply window flags for frameless and translucent style / 프레임리스 및 반투명 스타일 설정을 위한 윈도우 플래그 적용
     setWindowFlags(Qt::FramelessWindowHint | Qt::Window);
     setAttribute(Qt::WA_TranslucentBackground);
     setFixedSize(450, 700);
+    // Set application icon from resources / 리소스에서 애플리케이션 아이콘 설정
     setWindowIcon(QIcon(":/icon.png"));
 
     setupUi();
 }
 
+/**
+ * @brief Initialize the UI components / UI 컴포넌트 초기화
+ */
 void MainWindow::setupUi()
 {
     QWidget *central = new QWidget(this);

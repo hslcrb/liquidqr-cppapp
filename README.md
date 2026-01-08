@@ -10,6 +10,12 @@ This project was created through a collaboration between **Rheehose (Rhee Creati
 
 ---
 
+## 📸 Screenshot / 스크린샷
+
+![Liquid QR Coder Screenshot](resources/screenshot.png)
+
+---
+
 ## 🌟 Key Features / 주요 기능
 
 - **Real-time Generation / 실시간 생성**: QR codes update instantly as you type. / 입력과 동시에 QR 코드가 즉각적으로 업데이트됩니다.

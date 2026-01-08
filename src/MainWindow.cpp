@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowFlags(Qt::FramelessWindowHint | Qt::Window);
     setAttribute(Qt::WA_TranslucentBackground);
     setFixedSize(450, 700);
+    setWindowIcon(QIcon(":/icon.png"));
 
     setupUi();
 }

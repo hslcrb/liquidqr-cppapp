@@ -66,11 +66,11 @@ include CMakeFiles/appLiquidQR_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/appLiquidQR_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
-CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
+CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/appLiquidQR_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 
 appLiquidQR_autogen_timestamp_deps: CMakeFiles/appLiquidQR_autogen_timestamp_deps
 appLiquidQR_autogen_timestamp_deps: CMakeFiles/appLiquidQR_autogen_timestamp_deps.dir/build.make

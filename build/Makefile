@@ -155,6 +155,30 @@ appLiquidQR_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/appLiquidQR_autogen.dir/build.make CMakeFiles/appLiquidQR_autogen.dir/build
 .PHONY : appLiquidQR_autogen/fast
 
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.o: appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.o
+
+# target to build an object file
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appLiquidQR.dir/build.make CMakeFiles/appLiquidQR.dir/appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.o
+
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.i: appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.i
+
+# target to preprocess a source file
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appLiquidQR.dir/build.make CMakeFiles/appLiquidQR.dir/appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.i
+
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.s: appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.s
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.s
+
+# target to generate assembly for a file
+appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/appLiquidQR.dir/build.make CMakeFiles/appLiquidQR.dir/appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.s
+.PHONY : appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.cpp.s
+
 appLiquidQR_autogen/mocs_compilation.o: appLiquidQR_autogen/mocs_compilation.cpp.o
 .PHONY : appLiquidQR_autogen/mocs_compilation.o
 
@@ -310,6 +334,9 @@ help:
 	@echo "... appLiquidQR_autogen"
 	@echo "... appLiquidQR_autogen_timestamp_deps"
 	@echo "... appLiquidQR"
+	@echo "... appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.o"
+	@echo "... appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.i"
+	@echo "... appLiquidQR_autogen/3YJK5W5UP7/qrc_resources.s"
 	@echo "... appLiquidQR_autogen/mocs_compilation.o"
 	@echo "... appLiquidQR_autogen/mocs_compilation.i"
 	@echo "... appLiquidQR_autogen/mocs_compilation.s"

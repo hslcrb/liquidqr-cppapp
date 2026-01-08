@@ -17,6 +17,7 @@ add_executable(appLiquidQR
     src/QRGenerator.cpp
     src/MainWindow.cpp
     src/LiquidBackground.cpp
+    resources/resources.qrc
 )
 
 target_link_libraries(appLiquidQR PRIVATE

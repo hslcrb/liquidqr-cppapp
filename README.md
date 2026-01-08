@@ -6,6 +6,8 @@
 
 Liquid QR Coder는 현대적인 **Liquid Glassmorphism** 디자인이 적용된 강력한 C++ 기반 QR 코드 생성기입니다. 텍스트를 입력하는 즉시 아름다운 인터페이스 상에 QR 코드가 실시간으로 나타납니다.
 
+본 프로젝트는 **Rheehose (Rhee Creative)**와 **Google DeepMind의 Gemini 2.0 Flash (Antigravity)**의 협업으로 제작되었습니다.
+
 ## 🌟 주요 기능
 
 - **실시간 생성**: 입력과 동시에 QR 코드가 즉각적으로 업데이트됩니다.
@@ -16,18 +18,19 @@ Liquid QR Coder는 현대적인 **Liquid Glassmorphism** 디자인이 적용된 
 
 ## 🚀 시작하기
 
-### 실행 방법
-별도의 설치 없이 빌드된 바이너리를 실행하여 바로 사용할 수 있습니다.
-```bash
-./build/appLiquidQR
-```
+이 프로젝트는 **Windows, macOS, Linux** 환경을 모두 지원합니다. 각 플랫폼에 맞는 실행 파일을 사용하여 즉시 실행하거나 빌드할 수 있습니다.
 
-### 빌드 방법
-프로젝트를 직접 빌드하려면 Qt 6 개발 환경과 CMake가 필요합니다.
+### 플랫폼별 즉시 실행/빌드 스크립트
+- **Linux**: `./run_linux.sh`
+- **Windows**: `run_windows.bat` (CMake 및 Qt 환경 필요)
+- **macOS**: `./run_macos.sh` (Homebrew를 통한 Qt6 필요)
+
+### 상세 빌드 방법
+모든 플랫폼에서 공통적으로 Qt 6 개발 환경과 CMake가 필요합니다.
 ```bash
 mkdir build && cd build
 cmake ..
-make -j$(nproc)
+cmake --build .
 ```
 
 ## 🛠 기술 스택

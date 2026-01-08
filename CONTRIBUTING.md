@@ -1,3 +1,5 @@
+![Contributing Banner](resources/contributing_banner.png)
+
 # Contributing / 기여하기
 
 Thank you for your interest in Liquid QR Coder! Your contributions make this project better. / Liquid QR Coder 프로젝트에 관심을 가져주셔서 감사합니다! 여러분의 기여가 이 프로젝트를 더욱 풍부하게 만듭니다.

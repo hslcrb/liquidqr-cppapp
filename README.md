@@ -20,34 +20,47 @@ This project was created through a collaboration between **Rheehose (Rhee Creati
 
 ---
 
-## 🚀 Getting Started / 시작하기
+## 📦 Installation & Execution / 설치 및 실행 가이드
 
-This project supports **Windows, macOS, and Linux**. / 이 프로젝트는 **Windows, macOS, Linux** 환경을 모두 지원합니다.
+### 🐧 Linux (Debian/Ubuntu)
+The easiest way is to use the provided **.deb** package. / 가장 쉬운 방법은 제공된 **.deb** 패키지를 사용하는 것입니다.
+1.  Download `liquidqr_1.0_amd64.deb`.
+2.  Run the following command: / 아래 명령어를 실행하세요:
+    ```bash
+    sudo dpkg -i liquidqr_1.0_amd64.deb
+    ```
+3.  Find "Liquid QR Coder" in your application menu! / 애플리케이션 메뉴에서 "Liquid QR Coder"를 찾아 실행하세요!
 
-### Instant Run/Build Scripts / 플랫폼별 즉시 실행 및 빌드 스크립트
-Use the appropriate script for your platform. / 각 플랫폼에 맞는 스크립트를 사용하여 즉시 실행하거나 빌드할 수 있습니다.
+### 🍎 macOS
+1.  Install Qt6 and CMake via Homebrew: / Homebrew를 통해 Qt6와 CMake를 설치하세요:
+    ```bash
+    brew install qt@6 cmake
+    ```
+2.  Run the provided script: / 제공된 스크립트를 실행하세요:
+    ```bash
+    ./run_macos.sh
+    ```
 
-- **Linux**: `./run_linux.sh`
-- **Windows**: `run_windows.bat` (Requires CMake & Qt Environment / CMake 및 Qt 환경 필요)
-- **macOS**: `./run_macos.sh` (Requires Qt6 via Homebrew / Homebrew를 통한 Qt6 필요)
-
-### Detailed Build Instructions / 상세 빌드 방법
-Qt 6 development environment and CMake are required on all platforms. / 모든 플랫폼에서 공통적으로 Qt 6 개발 환경과 CMake가 필요합니다.
-
-```bash
-mkdir build && cd build
-cmake ..
-cmake --build .
-```
+### 🪟 Windows
+1.  Install **Qt 6** and **CMake**. Ensure they are added to your System PATH. / **Qt 6**와 **CMake**를 설치하고 시스템 PATH에 추가하세요.
+2.  Double-click `run_windows.bat`. / `run_windows.bat` 파일을 더블 클릭하세요.
 
 ---
 
-## 📦 Installation (Linux) / 설치 (리눅스)
-
-You can install the **.deb** package on Debian-based systems (Ubuntu, etc.). / 데비안 기반 시스템(우분투 등)에서는 **.deb** 패키지를 설치할 수 있습니다.
-
+## 🛠 Detailed Build Instructions / 상세 빌드 방법
+If you prefer to build manually / 수동으로 빌드하고 싶은 경우:
 ```bash
-sudo dpkg -i liquidqr_1.0_amd64.deb
+# 1. Create build directory / 빌드 디렉토리 생성
+mkdir build && cd build
+
+# 2. Configure project / 프로젝트 설정
+cmake ..
+
+# 3. Build / 빌드
+cmake --build .
+
+# 4. Run / 실행
+./appLiquidQR (Linux/Mac) or appLiquidQR.exe (Windows)
 ```
 
 ---
